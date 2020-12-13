@@ -1,5 +1,5 @@
 # pythonProjects
 amaze.py - Amazon price scraper to send notifications
-![](amaze.png)
+![](/Screenshots/amaze.png)
 red.py - Reddit giveaway bot
-![](red.png)
+![](/Screenshots/red.png)
