@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from discord_webhook import DiscordWebhook
 import datetime
 
-actualUrl="https://www.amazon.in/dp/B01J1CFOA8/ref=twister_B07KKWDQFW?_encoding=UTF8&psc=1"
+actualUrl=""
 
 try :
     title = ""
@@ -25,7 +25,7 @@ if (float(price)<500):
     messageString = "[" + str(title) + "](<" + str(actualUrl) + ">) is on sale at **Rs. " + str(price) + "**"
     print("Created the string which will be sent")
 
-    webhook = DiscordWebhook(url='https://discord.com/api/webhooks/776927456271532042/jsMjMOiHu7q2wjwW-rBfSlLpABEQ6U6IqcjjOSdYJYeZiSh6zgfbzrQB53C3v1Qmb0Af', content=messageString)
+    webhook = DiscordWebhook(url='', content=messageString)
 
     response = webhook.execute()
     print("Webhook called")
