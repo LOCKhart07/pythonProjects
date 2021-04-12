@@ -4,9 +4,9 @@ from discord_webhook import DiscordWebhook
 import datetime
 
 reddit = praw.Reddit(
-    client_id="MmLnTIBqWkovcA",
-    client_secret="HND4mVoNN8FPcUz2J2V7lgzPlF89zg",
-    user_agent="android:com.gaw.myredditapp:v0.0.1 (by u/johnylennon)"
+    client_id="",
+    client_secret="",
+    user_agent=""
 )
 print("Initialized Reddit API")
 
@@ -23,6 +23,6 @@ for postDiscord in postsDiscord:
     messageString = messageString + "\n" + postDiscord
 print("Created the string which will be sent")
 
-webhook = DiscordWebhook(url='https://discord.com/api/webhooks/776927456271532042/jsMjMOiHu7q2wjwW-rBfSlLpABEQ6U6IqcjjOSdYJYeZiSh6zgfbzrQB53C3v1Qmb0Af', content=messageString)
+webhook = DiscordWebhook(url='', content=messageString)
 response = webhook.execute()
 print("Webhook called")
