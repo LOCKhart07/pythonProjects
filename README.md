@@ -5,3 +5,6 @@
 
 ### red.py - Reddit giveaway bot
 ![](/Screenshots/red.png)
+
+
+### CowinNotifier.py - Cowin open slot notifier
