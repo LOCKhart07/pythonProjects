@@ -15,7 +15,7 @@ while 1:
         if(center["sessions"][0]["available_capacity"])!=0 :
             print("kara re register")
             messageString="Center : " + center["name"] + "\ncapacity : " + str(center["sessions"][0]["available_capacity"])
-            webhook = DiscordWebhook(url='https://discord.com/api/webhooks/841000673121927198/wd52CPsIYID1bUsVVxI5ju8qfF6zn-rgloG_DVoaqtclgNfBg8oJnqpK-CSvBOOvzayR', content=messageString)
+            webhook = DiscordWebhook(url='yourwebhook', content=messageString)
             response = webhook.execute()
             print("Webhook called")
 
